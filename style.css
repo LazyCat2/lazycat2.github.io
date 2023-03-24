@@ -95,7 +95,7 @@ h3 {
 }
 
 .kostil {
-  width: 75%;
+  width: 800px;
   height: fit-content;
   
   backdrop-filter: var(--effect);
