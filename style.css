@@ -1,0 +1,131 @@
+body {
+  justify-content: center;
+  background-color: #36393f;
+  color: #fff;
+  font-family: system-ui;
+  font-size: larger;
+  text-align: center;
+  min-height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://media.discordapp.net/attachments/1037464714025914389/1088803636764749824/wlp.png?');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  --effect: blur(25px);
+}
+* {
+	transition: .3s all;
+	color: var(--fg);
+}
+
+html {
+	--bg: #ffffffa0;
+	--bg-tr: #ffffff69;
+	--bg-d: #ffffffd0;
+	--fg: black;
+	--fg-t: #000000ee;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		--bg: #000000a0;
+		--bg-tr: #00000069;
+		--bg-d: #000000d0;
+		--fg: white;
+		--fg-t: #ffffffee;
+	}
+}
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+.avatar {
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+	margin-right: 25px;
+}
+
+.about {
+  width: 100%;
+  height: 250px;
+  
+  background: var(--bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.social {
+	background: var(--bg);
+	/*height: 50px;*/
+	padding-bottom: 10px;
+}
+
+.social > a { text-decoration: none; }
+
+.social > a > img {
+	border-radius: 100%;
+	width: 50px;
+	height: 50px;
+}
+
+.bruh {
+  text-align: left;
+}
+
+pre {
+  white-space: initial;
+  font-family: system-ui;
+  margin: 0px;
+  padding: 15px;
+}
+
+h3 {
+  margin: 0%;
+}
+
+.an {
+  background-color: #2f3136;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-flex;
+  width: 100%;
+
+  background: var(--bg-d);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.kostil {
+  width: 75%;
+  height: fit-content;
+  
+  backdrop-filter: var(--effect);
+
+  overflow: hidden;
+  border-radius: 5px 5px 5px 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .kostil {
+    width: 100%;
+  }
+  .kostil { border-radius: 0px !important; }
+}
+
+.social > a > img {	
+	transform: scale(1);
+	z-index: 255;
+}
+
+.social > a > img:hover {
+	transform: scale(1.2);
+}
