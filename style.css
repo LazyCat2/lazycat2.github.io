@@ -21,20 +21,14 @@ body {
 }
 
 html {
-	--bg: #ffffffa0;
-	--bg-tr: #ffffff69;
-	--bg-d: #ffffffd0;
+	--bg: #ffffff69;
 	--fg: black;
-	--fg-t: #000000ee;
 }
 
 @media (prefers-color-scheme: dark) {
 	html {
-		--bg: #000000a0;
-		--bg-tr: #00000069;
-		--bg-d: #000000d0;
+		--bg: #00000069;
 		--fg: white;
-		--fg-t: #ffffffee;
 	}
 }
 
@@ -54,7 +48,6 @@ html, body {
   width: 100%;
   height: 250px;
   
-  background: var(--bg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -62,7 +55,6 @@ html, body {
 }
 
 .social {
-	background: var(--bg);
 	/*height: 50px;*/
 	padding-bottom: 10px;
 }
@@ -91,13 +83,11 @@ h3 {
 }
 
 .an {
-  background-color: #2f3136;
   vertical-align: middle;
   text-align: center;
   display: inline-flex;
   width: 100%;
 
-  background: var(--bg-d);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -110,8 +100,9 @@ h3 {
   
   backdrop-filter: var(--effect);
 
+  background: var(--bg);
   overflow: hidden;
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 15px;
 }
 
 @media screen and (max-width: 800px) {
