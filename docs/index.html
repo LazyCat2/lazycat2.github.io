@@ -1,10 +1,13 @@
 <title>LazyCat</title>
 
 <meta content="LazyCat" property="og:title" />
-<meta content="Lazy shitcoder, trying to create something and giving it up ¯\_(ツ)_/¯" property="og:description" />
-<meta content="https://lazy-cat.ga" property="og:url" />
+<meta content="This is LazyCat's website" />
+<meta content="https://lazycat2.github.io" property="og:url" />
 <meta content="https://avatars.githubusercontent.com/u/68156188" property="og:image" />
 <meta content="#5865f2" data-react-helmet="true" name="theme-color" />
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="script.js"></script>
 
 <link rel="icon" 
       type="image/png" 
@@ -13,21 +16,20 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <link rel="stylesheet" href="style.css">
 
-<!--div id="cursor" ></div-->
 <div class="kostil">
 <div style="display:flex;justify-content:center;align-items:center;" class="an">
   <img id="avatar" class="avatar" src="https://avatars.githubusercontent.com/u/68156188" />
   <div class="bruh">
-  	<a style="font-weight: bold;">LazyCat</a><!--
-  	--><a style="opacity: 0.5;">#1200</a>
+  	<a style="font-weight: bold;">LazyCat</a>
   </div>
 </div>
 
 <div class="about">
-  <pre>
-    Lazy shitcoder, trying to create something and giving it up ¯\_(ツ)_/¯ <!-- TODO: Make readme sync with discord embed and <pre> somehow -->
+  <pre id="bio">
+    
   </pre>
 </div>
+<p id="hint">_</p>
 <div class="social">
 	<a href="https://t.me/Lot_Of_Cats"><!--
 	--><img
@@ -44,11 +46,27 @@
 			src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOjCGcYwl04G5JUZtJ-1_1n2p3BTq6Ec9C0Q&usqp=CAU"
 			alt="GitHub"
 		/>
-	</a><a href="https://matrix.to/#/@lazy-cat:matrix.org"><!--
+	</a><a href="https://matrix.to/#/@lazy-cat:matrix.org" style="margin: 10px;"><!--
 	--><img
 			src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT934Wi_Omrf8QNQnXVh94lKyoRF8Nu576htndDDLwBwlC2tRrUCED_ge5eIUZKgcQQTWc&usqp=CAU"
 			alt="Matrix"
 		/>
+	</a><a href="javascript:0" class="click-to-copy"><!--
+	--><img
+			src="https://avatars.githubusercontent.com/u/57727799"
+			alt="Revolt"
+		/>
+	</a><a href="javascript:0" class="click-to-copy" style="margin-left: 10px;"><!--
+	--><img
+			src="https://static.vecteezy.com/system/resources/previews/006/892/625/original/discord-logo-icon-editorial-free-vector.jpg"
+			alt="Discord"
+		/>
 	</a>
 </div>
+<div id="create-comment">
+
 </div>
+</div>
+
+
+<div id="comments"></div>

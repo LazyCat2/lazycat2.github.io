@@ -1,3 +1,2 @@
-/db.db
-/target/
-*.lock
+db.db
+.env
