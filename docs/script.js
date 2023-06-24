@@ -1,7 +1,7 @@
 const BASE_API_URL =
 	(
-		window.location.href ==
-		"https://lazycat2.github.io/"
+		window.location.host ==
+		"lazycat2.github.io"
 		? "https://185.13.47.146"
 		: "http://127.0.0.1"
 	) + ":42069",
