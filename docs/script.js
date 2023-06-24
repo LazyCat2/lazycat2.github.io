@@ -7,7 +7,7 @@ const BASE_API_URL =
 	) + ":42069",
 	USERNAMES = {
 		revolt: "LazyCat#3080",
-		discord: "uwushnick"
+		discord: "uwushnik"
 	}
 
 copyFallback = text => {
