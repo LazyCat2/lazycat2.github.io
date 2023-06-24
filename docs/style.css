@@ -67,11 +67,6 @@ html, body {
   background-attachment: fixed;
 }
 
-.social {
-	/*height: 50px;*/
-	padding-bottom: 10px;
-}
-
 .social > a { 
 	text-decoration: none; 
 	height: 50px;
