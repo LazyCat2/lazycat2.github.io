@@ -126,13 +126,14 @@ h3 {
 }
 
 @media screen and (max-width: 900px) {
-  .kostil, .comments, .comment {
-    width: 100%;
+  .kostil, .comment {
+    width: 100% !important;
     border-radius: 0px !important;
   }
-  .comment, .comments {
-  	margin: 0px;
+  #comments {
+  	width: calc(100% - 20px) !important;
   }
+  
   .kostil {
   	margin-top: 0px;
   }
